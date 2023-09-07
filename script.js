@@ -79,7 +79,7 @@ console.log(newArr)
 
 
 const users = [{name: 'Vasya'}, {name: 'Olya'}, {name: 'Anna'}, {name: 'Alex'}, {name: 'Valery'}];
-const newUsers = users.map(item => item.name);
+const newUsers = users => users.map(item => item.name);
    
 console.log(newUsers)
 
@@ -124,11 +124,8 @@ const sumObjectValues = objectWithNumbers => {
 
 let str = 'вот и лето прошло';
 
-ucFirst = str => {
-   if (!str) return str;
+ucFirst = str => str[0].toUpperCase() + str.slice(1);
  
-   return str[0].toUpperCase() + str.slice(1);
- }
 
  
 
