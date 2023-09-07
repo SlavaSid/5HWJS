@@ -66,12 +66,10 @@ console.log(guessNumber(10))
 
 //    Задание 4 Напишите функцию copyArr(arr), которая копирует массив, не изменяя оригинал. Используйте подходящий метод массива - forEach или map.
 
-// const arr = ['Brok', 'Sed', 'Mila', 'Bill'];
+const arr = ['Brok', 'Sed', 'Mila', 'Bill'];
 
 
-const newArr = arr.map(arr => {
-   return arr;
-})
+const newArr = arr.map(arr => arr);
 
 console.log(newArr)
 
@@ -81,9 +79,7 @@ console.log(newArr)
 const arr = ['Brok', 'Sed', 'Mila', 'Bill'];
 
 
-const newArr = arr.map(arr => {
-return 'Hello, ' + arr;
-})
+const newArr = arr.map(arr => 'Hello, ' + arr);
 
 console.log(newArr)
 
@@ -164,4 +160,3 @@ ucFirst = str => {
    }}
  console.log(checkSpam('shdfj'))
 
- 5HWJS
