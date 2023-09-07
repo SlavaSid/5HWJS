@@ -13,10 +13,7 @@
 // sum(); // введите два параметра
 
 let sum = (a, b) => {
-    if(a === undefined && b === undefined){
-        console.error('введите два параметра');
-
-    } else if (a === undefined || b === undefined){
+    if (a === undefined || b === undefined){
         console.error('введите два параметра')
 
     } else if (typeof a !== 'number' || typeof b !== 'number'){
@@ -52,16 +49,8 @@ let getRandomInteger = (min, max) => {
   }
 
 console.log(guessNumber(1))
-console.log(guessNumber(2))
-console.log(guessNumber(3))
-console.log(guessNumber(4))
-console.log(guessNumber(5))
-console.log(guessNumber(6))
-console.log(guessNumber(7))
-console.log(guessNumber(8))
-console.log(guessNumber(9))
-console.log(guessNumber(10))
-   // Почему при одинаковых значениях не всегда выпадает "Вы выйграли"?
+
+  
 
 
 //    Задание 4 Напишите функцию copyArr(arr), которая копирует массив, не изменяя оригинал. Используйте подходящий метод массива - forEach или map.
@@ -89,11 +78,7 @@ console.log(newArr)
 
 
 const users = [{name: 'Vasya'}, {name: 'Olya'}, {name: 'Anna'}, {name: 'Alex'}, {name: 'Valery'}];
-const newUsers = [];
-
-users.forEach(item => {
-   newUsers.push(item.name);
-})
+const newUsers = users.map(item => item.name);
    
 console.log(newUsers)
 
@@ -144,7 +129,7 @@ ucFirst = str => {
    return str[0].toUpperCase() + str.slice(1);
  }
 
- console.log(ucFirst(str))
+ 
 
 
 // Задание 9 Напишите функцию checkSpam(str), возвращающую true, если str содержит 'badWord' или 'XXX', а иначе false.
