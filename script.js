@@ -37,11 +37,12 @@ sum(); // введите два параметра
 
 
 let guessNumber = (a) => {
+   const randomNumber = getRandomInteger(1, 10);
      if(a <= 0 || 11 <= a) return ('введите введите число от 1 до 10');
 
-    else if(a == getRandomInteger(1, 10)) return ('Вы выйграли');
+    else if(a == randomNumber) return ('Вы выйграли');
  
-    else return (`Вы не угадали, ваше число - ${a}, а выпало число ${getRandomInteger(1, 10)}`);
+    else return (`Вы не угадали, ваше число - ${a}, а выпало число ${randomNumber}`);
 }
 
 let getRandomInteger = (min, max) => {
